@@ -8,6 +8,31 @@
       margin: 20;
       font-family: georgia;
    }
+   .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 4px;
+   }
+   .column {
+      -ms-flex: 25%;
+      flex: 25%;
+      max-width: 25%;
+      padding: 4px;
+   }
+   .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+   }
+   @media screen and (max-width: 600px) {
+      .column {
+         -ms-flex: 100%;
+         flex: 100%;
+         max-width: 100%;
+      }
+   }
    h2 {
       color:rgb(35, 20, 106);
       text-align: center;
