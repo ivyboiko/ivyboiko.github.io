@@ -16,16 +16,23 @@
       flex-wrap: wrap;
       padding: 4px;
    }
-   .column {
-      -ms-flex: 32%;
-      flex: 32%;
-      max-width: 32%;
-      padding: 4px;
-   }
+   /* .column { */
+      /* -ms-flex: 32%; */
+      /* flex: 32%; */
+      /* max-width: 32%; */
+      /* padding: 4px; */
+   /* } */
    .column img {
       margin-top: 8px;
       vertical-align: middle;
       width: 100%;
+   }
+   @media screen and (max-width: 600px) {
+      .column {
+         -ms-flex: 32%;
+         flex: 32%;
+         max-width: 32%;
+      }
    }
    @media screen and (max-width: 400px) {
       .column {
